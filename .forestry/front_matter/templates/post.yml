@@ -31,11 +31,6 @@ fields:
     min: 
     max: 
     step: 
-- name: hero
-  type: file
-  config:
-    maxSize: 250
-  label: Hero Image
 - name: authors
   type: tag_list
   default: []
