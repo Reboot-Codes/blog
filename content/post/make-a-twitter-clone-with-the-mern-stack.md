@@ -16,7 +16,7 @@ Basically re-make twitter using the MERN stack. The MERN stack uses MongoDB (as 
 
 Normally people start with the frontend, however I find that making the backend first makes things easier as you have already organized the database and you don’t worry about needing a thing that you forgot to expose in the API.
 
-The Backend uses Express (api server package, so we don’t have to do it ourselves), Mongoose (MongoDB driver that almost forces you to use a schema to keep things organized), and GraphQL (a better query language that structures the response so nothing breaks if we reorganize the organization of things). The API will use the standard HTTP request types (like GET, POST, PUT, and DELETE) while using GraphQL in the body of the requests.
+The Backend uses Express (api server package, so we don’t have to do it ourselves), Mongoose (MongoDB driver that almost forces you to use a schema to keep things organized), and GraphQL (a better query language that structures the response so nothing breaks if we reorganize the organization of things). The API will use the standard HTTP request types (like `GET`, `POST`, `PUT`, and `DELETE`) while using GraphQL in the body of the requests.
 
 ### Packages
 
@@ -29,7 +29,7 @@ Here are all the direct dependancies for the Backend:
 
 ### Setup
 
-Setup the backend, we should probably have the database running in the background (or dockerized somewhere). To do this we need to install MongoDB on our local machine anyway to get access to the Mongo Shell and have a nice local database for testing. However you may not want the database installed on your main OS, so you should dockerize it; a tutorial on this can be found [https://coderwall.com/p/vxq6oa/setup-a-mongodb-container-with-a-docker-file](https://coderwall.com/p/vxq6oa/setup-a-mongodb-container-with-a-docker-file "here"). But I will set it up on my local machine for simplicity.
+Setup the backend, we should probably have the database running in the background (or dockerized somewhere). To do this we need to install MongoDB on our local machine anyway to get access to the Mongo Shell and have a nice local database for testing. However you may not want the database installed on your main OS, so you should dockerize it; a tutorial on this can be found at [https://coderwall.com/p/vxq6oa/setup-a-mongodb-container-with-a-docker-file](https://coderwall.com/p/vxq6oa/setup-a-mongodb-container-with-a-docker-file "here"). But I will set it up on my local machine for simplicity.
 
 #### MacOS
 
@@ -51,15 +51,15 @@ This adds the “tap” and installs the shell. This isn’t a tutorial on how t
 
 ***
 
-Or if you don’t have brew, then download MDB \[here\]([https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community "https://www.mongodb.com/try/download/community")).
+Or if you don’t have brew, then download MDB at [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community "https://www.mongodb.com/try/download/community").
 
 #### Linux
 
-Follow the instructions for your specific distro \[here\]([https://docs.mongodb.com/manual/administration/install-on-linux/](https://docs.mongodb.com/manual/administration/install-on-linux/ "https://docs.mongodb.com/manual/administration/install-on-linux/")).
+Follow the instructions for your specific distro at [https://docs.mongodb.com/manual/administration/install-on-linux/](https://docs.mongodb.com/manual/administration/install-on-linux/ "https://docs.mongodb.com/manual/administration/install-on-linux/").
 
 #### Windows
 
-Download the installer \[here\]([https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community "https://www.mongodb.com/try/download/community")), run the \`MSI File\`, and follow the instructions to install MongoDB.
+Download the installer at ([https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community "https://www.mongodb.com/try/download/community"), run the `MSI File`, and follow the instructions to install MongoDB.
 
 ***
 
