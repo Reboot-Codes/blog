@@ -68,4 +68,4 @@ You should now have MongoDB installed now (yay!)
 
 ## The Frontend
 
-The Frontend uses React (of course), Styled-Components (for templating components), and Tailwind CSS (provided utility styling classes and keeping things consistent). Other notable dependancies are Axios (a replacement for \`fetch()\`) and GraphQL (this needs to be in the frontend for obvious reasons).
+The Frontend uses React (of course), Styled-Components (for templating components), and Tailwind CSS (provided utility styling classes and keeping things consistent). Other notable dependancies are Axios (a replacement for `fetch()`) and GraphQL (this needs to be in the frontend for obvious reasons).
