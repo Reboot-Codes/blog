@@ -35,3 +35,5 @@ fields:
   type: tag_list
   default: []
   label: Authors
+pages:
+- content/post/make-a-twitter-clone-with-the-mern-stack.md
