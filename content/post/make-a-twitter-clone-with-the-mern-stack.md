@@ -1,6 +1,7 @@
 ---
 timeToRead: 0
-authors: []
+authors:
+- Reboot-Codes
 title: Make a Twitter Clone with the MERN Stack
 excerpt: Basically re-make twitter using the MERN stack. The MERN stack uses MongoDB
   (as a database, of course), Express (api package for Node.js), React (as a front-end
