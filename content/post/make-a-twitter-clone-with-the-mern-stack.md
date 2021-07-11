@@ -8,7 +8,7 @@ excerpt: Basically re-make twitter using the MERN stack. The MERN stack uses Mon
   javascript library), and Node.js (the base runtime for the server driving the stack,
   except MongoDB, I think).
 date: 2021-07-11T07:00:00+00:00
-draft: true
+draft: false
 
 ---
 Basically re-make twitter using the MERN stack. The MERN stack uses MongoDB (as a database, of course), Express (api package for Node.js), React (as a front-end javascript library), and Node.js (the base runtime for the server driving the stack, except MongoDB, I think). Using this stack, the developer only needs to know Javascript as a programing language (plus JSX and CSS) and have knowledge of how MongoDB is structured to make the REST API powered by Express and Node.js.
@@ -30,41 +30,43 @@ Here are all the direct dependancies for the Backend:
 
 ### Setup
 
-Setup the backend, we should probably have the database running in the background (or dockerized somewhere). To do this we need to install MongoDB on our local machine anyway to get access to the Mongo Shell and have a nice local database for testing. However you may not want the database installed on your main OS, so you should dockerize it; a tutorial on this can be found at [https://coderwall.com/p/vxq6oa/setup-a-mongodb-container-with-a-docker-file](https://coderwall.com/p/vxq6oa/setup-a-mongodb-container-with-a-docker-file "here"). But I will set it up on my local machine for simplicity.
+Setup the backend, we should probably have the database running in the background (or dockerized somewhere). To do this we need to install MongoDB on our local machine anyway to get access to the Mongo Shell and have a nice local database for testing. However you may not want the database installed on your main OS, so you should dockerize it; a tutorial on this can be found [here](https://coderwall.com/p/vxq6oa/setup-a-mongodb-container-with-a-docker-file). But I will set it up on my local machine for simplicity.
 
 #### MacOS
 
 On macOS (with Homebrew installed) you can run this one-liner to install MongoDB:
 
-    brew tap mongodb/brew && brew install mongodb-community
+```bash
+brew tap mongodb/brew && brew install mongodb-community
+```
 
 This will add the “tap” for all MongoDB packages, and install MongoDB Community. Then start up the server using:
 
-    brew services start mongodb-community
-
-***
+```bash
+brew services start mongodb-community
+```
 
 However if you are using MongoDB Atlas, or only use MongoDB in a docker container, then you may just want the shell. For that run:
 
-    brew tap mongodb/brew && brew install mongodb-community-shell
+```bash
+brew tap mongodb/brew && brew install mongodb-community-shell
+```
 
 This adds the “tap” and installs the shell. This isn’t a tutorial on how to use the MDB shell and how to sign in using credentials; so please google that if you have trouble.
 
-***
-
-Or if you don’t have brew, then download MDB at [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community "https://www.mongodb.com/try/download/community").
+Or if you don’t have brew, then download MDB [here](https://www.mongodb.com/try/download/community).
 
 #### Linux
 
-Follow the instructions for your specific distro at [https://docs.mongodb.com/manual/administration/install-on-linux/](https://docs.mongodb.com/manual/administration/install-on-linux/ "https://docs.mongodb.com/manual/administration/install-on-linux/").
+Follow the instructions for your specific distro [here](https://docs.mongodb.com/manual/administration/install-on-linux/).
 
 #### Windows
 
-Download the installer at ([https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community "https://www.mongodb.com/try/download/community"), run the `MSI File`, and follow the instructions to install MongoDB.
-
-***
+Download the installer [here](https://www.mongodb.com/try/download/community), run the `MSI File`, and follow the instructions to install MongoDB.
 
 You should now have MongoDB installed now (yay!)
+
+---
 
 ## The Frontend
 

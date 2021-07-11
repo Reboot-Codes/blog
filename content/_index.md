@@ -1,6 +1,6 @@
 ---
 hero:
-  heading: Novela, the simplest way to start publishing with Hugo and Forestry.
+  heading: A person who is spread way to thin, and decided that having a blog is a good idea.
   maxWidthPX: 652
 seo:
   image: /images/hero-2.jpg
